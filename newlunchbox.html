@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html body {
+				  background-color:blanchedalmond;
+				  font-family: 'Montserrat', sans-serif;
+				  margin: 0;
+				  padding: 0; 
+				}
+								  
+				}
+				.nav {
+				  padding-left: 0;
+				  margin-bottom: 0;
+				  list-style: none;
+				  background-color: #a18c8c
+				}
+				
+				.nav ul {
+				 height: 50px;
+				  margin: 0 0 30px;
+				  padding: 10px 0px;
+				  text-align: center;
+				   
+				}
+				
+				.nav li {
+				  -webkit-transition:color 0.25s;
+				  transition:color 0.25s;
+				  color:#FFFFFF;
+				  display: inline;
+				  text-transform: uppercase;
+				  padding: 0 10px;
+				  font-size:12px;
+				}
+				
+				.nav li:hover {
+				  color:aliceblue;
+				  cursor: pointer; 
+				  -webkit-transition: color .8s;
+				  transition: color .8s;
+				}
+				
+				.row {
+				  margin-top: 30px;
+				}
+				.image_wrapper {
+				  display: block;
+				  position: relative;
+				  max-width: 100%;
+				  height: auto;
+				
+				}
+				.img-responsive {
+				  display: block;
+				  position: relative;
+				  max-width: 100%;
+				  height: auto;
+				  box-shadow: 0 0 60px #494949;
+				  opacity: .65;
+				  transition: .65s ease;
+				  
+				}
+				
+				.text {
+				  text-align: center;
+				  width: 50%;
+				  border: 1px solid black;
+				  padding: 3px 10px 1px 10px;
+				  color:black;
+				  font-size: 18px;
+				  position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  transform: translate(-50%, -50%);
+				  -ms-transform: translate(-50%, -50%);
+				  transition: .65s ease;
+				  text-transform: uppercase;
+				  opacity: .9;				  
+				  
+				}
+				
+				.img-responsive:hover {
+				  opacity: 1;
+				  box-shadow: 0 0 30px #5a5a5a;
+				}
+				.image_wrapper:hover .text{
+				  opacity: 0;
+				}
+				
+				
+				.showcase {
+				  color: #31363d;
+				  font-size: 10px;
+				  height: 70px;
+				  line-height: 70px;
+				  text-align: right;
+				  text-transform: uppercase;
+				  margin-bottom: 100px;
+				  
+				}
+				
+				@media (max-width: 473px) {
+				   .text {
+				    width: auto;
+				  }
+				    }
+				  .img-responsive {
+				    max-width: 75%;
+				    
+				    
+				}
+				  .image_wrapper {
+				    margin-bottom: 20px;
+				  }
+				  .clearfix {
+				    clear: both;
+				  }
+				}
+				
+				@media (max-width: 767px) {
+				    .text {
+				    width: auto;
+				  }
+				  .image-wrapper {
+				    margin: 0 50px 20px;
+				    width: 50%;
+				  }
+				  .img-responsive {
+				    max-width: 50%;
+				    margin-right: 100px;
+				    margin-left:100px;
+				}
+				}
+				
+				@media (max-width: 991px) {
+				  .text {
+				    width: auto;
+				  }
+				  .image-wrapper {
+				    max-width: 75%;
+				    margin: 0 50px 20px;
+				  }
+				  .img-responsive {
+				    max-width: 75%;
+				  }
+				}
+				
+				.tb, .tb tr{
+					font-family: "Raleway", sans-serif, sans;
+					color:black;
+					/*border: 1px solid #333333;*/
+					border:3px #FFD382 dashed;
+					width: 365px;
+					height: 100px;
+					/*width: 30%;
+					height: 30%;*/
+					text-align:center;
+					position:static;
+					
+				}
+								
+												
+		</style>	
+		<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	</head>		
+		<body>	
+		<div class="container">
+    	<div class="row">
+        <div class="col-md-4">
+          <div class="image_wrapper" id="p1" onclick="display_table1()">
+          <img class="img-responsive" src="http://35.173.133.127/wp-content/uploads/2018/09/1.jpeg">
+            <div class="text">Monday</div>
+          </div>
+          <table class= "tb" id="info_1" style="display:none"> 
+			<tr> 
+				<td>Smoked mackerel maki rolls</td>
+			</tr>
+			<tr>
+				<td>Recipe</td>
+			</tr>
+			<tr>
+				<td><p>150g sushi rice</p>
+					<p>2 tsp rice wine vinegar</p>
+					<p>4 nori sheets</p>
+					<p>1 red chilli, deseeded and cut into matchsticks</p>
+					<p>½ carrot, peeled and cut into matchsticks</p>
+					<p>¼ cucumber, cut into matchsticks</p>
+					<p>100g smoked mackerel, skin removed, torn into small pieces</p>
+					<p>soy sauce, for dipping</p></td>
+			</tr>
+			<tr> 
+				<td id="f1">218calories</td>
+			</tr> 
+			</table>			
+          </div>
+          
+      
+        <div class="col-md-4">
+          <div class="image_wrapper" id="p2" onclick="display_table2()">
+        	<img class="img-responsive" src="http://35.173.133.127/wp-content/uploads/2018/09/2.jpg"> 
+          <div class="text">Tuesday</span></div>
+            </div>
+            <table class= "tb" id="info_2" style="display:none"> 
+			<tr> 
+				<td>Asian pulled chicken salad</td>
+			</tr>
+			<tr>
+				<td>Recipe</td>
+			</tr>
+			<tr>
+				<td><p>1 small roasted chicken, about 1kg</p>
+					<p>½ red cabbage, cored and finely sliced</p>
+					<p>3 carrots, coarsley grated or finely shredded</p>
+					<p>5 spring onions, finely sliced on the diagonal</p>
+					<p>2 red chillies, halved and thinly sliced</p>
+					<p>small bunch coriander, roughly chopped, including stalks</p>
+					<p>2 heaped tbsp roasted salted peanuts, roughly crushed</p>
+					<p>3½ tbsp hoisin sauce</p>
+					<p>1½ tbsp toasted sesame oil</p>
+				</td>
+			</tr>
+			<tr> 
+				<td id="f2">353calories</td>
+			</tr> 
+			</table>
+      </div>
+            
+        
+     
+        <div class="col-md-4">
+          <div class="image_wrapper" id="p3" onclick="display_table3()">
+         <img class="img-responsive" src="http://35.173.133.127/wp-content/uploads/2018/09/3.jpg">
+          <div class="text">Wednesday</div>
+          </div>
+     </div>
+     <table class= "tb" id="info_3" style="display:none"> 
+			<tr> 
+				<td>Chipotle chicken tacos with pineapple salsa</td>
+			</tr>
+			<tr>
+				<td>Recipe</td>
+			</tr>
+			<tr>
+				<td><p>500g skinless boneless chicken thighs</p>
+					<p>1 tbsp vegetable oil</p>
+					<p>1 medium onion, chopped</p>
+					<p>2 tsp sweet smoked paprika</p>
+					<p>2 tsp ground cumin</p>
+					<p>2 tbsp cider vinegar</p>
+					<p>1 tbsp chipotle paste</p>
+					<p>200ml passata</p>
+					<p>2 tbsp soft brown sugar</p>
+					<p>½ small pineapple, cored, peeled and chopped</p>
+					<p>½ small pack coriander, chopped</p>
+					<!--<p>corn or flour tortillas</p>
+					<p>hot sauce (I like Tabasco Chipotle), to serve</p>					-->
+				</td>
+			</tr>
+			<tr> 
+				<td id="f3">392calories</td>
+			</tr> 
+		</table>
+    </div>
+    
+ 
+		 
+    <div class="row">
+        <div class="col-md-4">
+          <div class="image_wrapper" id="p4" onclick="display_table4()">
+          <img class="img-responsive" src="http://35.173.133.127/wp-content/uploads/2018/09/4.jpg">
+          <div class="text">Thrusday</div>
+         </div>
+         <table  class= "tb" id="info_4" style="display:none"> 
+			<tr> 
+				<td>Barbecued squid salad</td>
+			</tr>
+			<tr>
+				<td>Recipe</td>
+			</tr>
+			<tr>
+				<td><p>800g fresh prepared squid</p>
+					<p>zest 3 limes(reserve the juice for the salad, and wedges, to serve)</p>
+					<p>2 tbsp extra virgin olive oil</p>
+					<p>3 garlic cloves, smashed flat</p>
+					<p>1½ tsp mixed peppercorn, crushed</p>
+					<p>1 large red onion, finely sliced</p>
+					<p>1 large mango, cut into small chunks</p>
+					<p>1 large red chilli, finely shredded (deseeded if you don't like it too hot)</p>
+					<p>400g can black bean, well rinsed then patted dry</p>
+					<p>3 ripe avocados</p>
+					<p>small pack coriander, leaves only, torn</p>
+					<p>extra virgin olive oil, for drizzling</p>					
+				</td>
+			</tr>
+			<tr> 
+				<td id="f4">374calories</td>
+			</tr>  
+			</table>
+      </div>
+         
+         
+        <div class="col-md-4">
+          <div class="image_wrapper" id="p5" onclick="display_table5()">
+           <img class="img-responsive" src="http://35.173.133.127/wp-content/uploads/2018/09/5.jpg">
+          <div class="text">Friday</div>
+      </div>
+      <table class= "tb" id="info_5" style="display:none"> 
+			<tr> 
+				<td>Asparagus and new potato frittata</td>
+			</tr>
+			<tr>
+				<td>Recipe</td>
+			</tr>
+			<tr>
+				<td><p>200g new potatoes, quartered</p>
+					<p>100g asparagus tips</p>
+					<p>1 tbsp olive oil</p>
+					<p>1 onion, finely chopped</p>
+					<p>6 eggs, beaten</p>
+					<p>40g cheddar, grated</p>
+					<p>rocket or mixed leaves, to serve</p>				
+				</td>
+			</tr>
+			<tr> 
+				<td id="f5">310calories</td>
+			</tr>  
+			</table>
+      </div>
+      
+        <div class="col-md-4">
+          <div class="image_wrapper" id="p6" onclick="display_table6()">
+          <img class="img-responsive"  src="http://35.173.133.127/wp-content/uploads/2018/09/6.jpg">
+          <div class="text">Saturday</div>
+         </div>
+         <table  class= "tb" id="info_6" style="display:none"> 
+			<tr> 
+				<td>Roast sea bass and vegetable traybake</td>
+			</tr>
+			<tr>
+				<td>Recipe</td>
+			</tr>
+			<tr>
+				<td><p>300g red-skinned potatoes, thinly sliced into rounds</p>
+					<p>1 red pepper, cut into strips</p>
+					<p>2 tbsp extra virgin olive oil</p>
+					<p>1 rosemary sprig, leaves removed and very finely chopped</p>
+					<p>2 sea bass fillets</p>
+					<p>25g pitted black olive, halved</p>
+					<p>½ lemon, sliced thinly into rounds</p>
+					<p>handful basil leaves</p>				
+				</td>
+			</tr>
+			<tr> 
+				<td id="f6">374calories</td>
+			</tr>  
+			</table>
+      </div> 
+    </div>
+    
+
+<script type="text/javascript">	
+	
+	function display_table1(){ 
+		var pic1 = document.getElementById("p1"); 
+		var id1 = document.getElementById("info_1");
+		var cal1 = document.getElementById("cal1");
+		
+		
+		if(id1.style.display=='none'){
+			id1.style.display ="";
+			cal1.style.display = "";
+			pic1.style.visibility = 'visible'; 
+		}else{ 
+			id1.style.display ="none";
+			cal1.style.display = "none";
+			pic1.style.visibility = 'visible'; 
+		}
+	}
+		
+	function display_table2(){
+		
+		var pic2 = document.getElementById("p2"); 
+		var id2 = document.getElementById("info_2");
+		var cal2 = document.getElementById("cal2");
+		
+		if(id2.style.display=='none'){
+			id2.style.display ="";
+			cal2.style.display = "";
+			pic2.style.visibility = 'visible'; 
+		}else{ 
+			id2.style.display ="none"; 
+			cal2.style.display ="none";
+			pic2.style.visibility = 'visible'; 
+		}
+	}
+	
+	
+	function display_table3(){ 
+		var pic3 = document.getElementById("p3"); 
+		var id3 = document.getElementById("info_3");
+		var cal3 = document.getElementById("cal3");
+		
+		if(id3.style.display=='none'){
+			id3.style.display ="";
+			cal3.style.display = "";
+			pic3.style.visibility = 'visible'; 
+		}else{ 
+			id3.style.display ="none";
+			cal3.style.display = "none";
+			pic3.style.visibility = 'visible'; 
+		}
+	}
+	
+	
+	function display_table4(){ 
+		var pic4 = document.getElementById("p4"); 
+		var id4 = document.getElementById("info_4");
+		var cal4 = document.getElementById("cal4");
+		
+		if(id4.style.display=='none'){
+			id4.style.display ="";
+			cal4.style.display = "";
+			pic4.style.visibility = 'visible'; 
+		}else{ 
+			id4.style.display ="none"; 
+			cal4.style.display = "none";
+			pic4.style.visibility = 'visible'; 
+		}
+	} 
+	
+	function display_table5(){ 
+		var pic5 = document.getElementById("p5"); 
+		var id5 = document.getElementById("info_5");
+		var cal5 = document.getElementById("cal5");
+		
+		if(id5.style.display=='none'){
+			id5.style.display ="";
+			cal5.style.display = "";
+			pic5.style.visibility = 'visible'; 
+		}else{ 
+			id5.style.display ="none";
+			cal5.style.display = "none";
+			pic5.style.visibility = 'visible'; 
+		}
+	} 
+	
+	function display_table6(){ 
+		var pic6 = document.getElementById("p6"); 
+		var id6 = document.getElementById("info_6");
+		var cal6 = document.getElementById("cal6");
+		
+		if(id6.style.display=='none'){
+			id6.style.display ="";
+			cal6.style.display = "";
+			pic6.style.visibility = 'visible'; 
+		}else{ 
+			id6.style.display ="none";
+			cal6.style.display = "none";
+			pic6.style.visibility = 'visible'; 
+		}
+	} 
+</script> 		
+		
+		
+	</body>
+</html>
