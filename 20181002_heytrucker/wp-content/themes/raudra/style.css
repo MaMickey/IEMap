@@ -1,0 +1,29 @@
+/*
+Theme Name: Raudra
+Theme URI: http://www.templatesnext.org/raudra/
+Author: marsian
+Author URI: http://templatesnext.org/
+Template: i-excel
+Description: Raudra is a multipurpose WordPress theme with extreme flexibility. It can be used as Blog, Personal Website, Business Portal, Portfolio or WooCommerce Shop. 
+Tags: one-column, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, sticky-post, threaded-comments, translation-ready, blog, e-commerce, portfolio 
+Version: 1.0.2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v3 or later
+Text Domain:  raudra
+
+
+*/
+/* --------------------------------------------
+	CHILD THEME CSS
+-------------------------------------------- */
+.tx-service.curved .tx-service-icon span, 
+.tx-service.square .tx-service-icon span {
+    border: 6px solid #e7e7e7;
+    width: 100px;
+    height: 100px;
+}
+
+.tx-service.curved .tx-service-icon span i:before, 
+.tx-service.square .tx-service-icon span i:before {
+    color: #FFFFFF;
+}

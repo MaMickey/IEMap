@@ -1,0 +1,26 @@
+{
+  "name": "climacons-webfont/climacons-webfont",
+  "description": "The Climacons webfont. Climacons created by Adam Whitcroft. Credit also to Christian Naths for webfont version.",
+  "authors": [
+    {
+      "name": "Adam Whitcroft",
+      "email": "hello@adamwhitcroft.com",
+      "homepage": "http://adamwhitcroft.com/",
+      "role": "Designer"
+    },
+    {
+      "name": "Christian Naths",
+      "email": "christiannaths@gmail.com",
+      "homepage": "https://christiannaths.com/",
+      "role": "Developer"
+    },
+    {
+      "name": "TourKick LLC (Clifford Paulick)",
+      "email": "tko+tkeventw@tourkick.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/cliffordp/climacons-webfont/issues"
+  }
+}
